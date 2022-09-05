@@ -1,5 +1,9 @@
 * {
     box-sizing: border-box;
+
+}
+
+body {
     font-family: 'Commissioner', sans-serif;
 }
 
@@ -18,4 +22,51 @@ header {
     padding-top: 1.8em;
     padding-left: 1.5em;
     padding-right: 1.5em;
+
+
+
+}
+
+.tabdesk-options {
+    display: none;
+}
+
+
+
+@media screen and (min-width:768px) {
+    header {
+        background-image: url('imgs/image-hero-desktop.jpg');
+
+
+        height: 400px;
+    }
+
+    #ham {
+        display: none;
+    }
+
+    .tabdesk-options {
+        display: flex;
+        width: 225px;
+        justify-content: space-between;
+
+    }
+
+    .tabdesk-options a {
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .tabdesk-options a:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .top-header {
+        max-width: 1160px;
+        padding-top: 3em;
+        margin: 0 auto;
+    }
+
 }
