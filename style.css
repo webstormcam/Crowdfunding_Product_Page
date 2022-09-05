@@ -2,3 +2,20 @@
     box-sizing: border-box;
     font-family: 'Commissioner', sans-serif;
 }
+
+header {
+    background-image: url('imgs/image-hero-mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.8em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
