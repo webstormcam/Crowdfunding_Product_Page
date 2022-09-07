@@ -5,6 +5,7 @@
 
 body {
     font-family: 'Commissioner', sans-serif;
+
 }
 
 header {
@@ -13,6 +14,8 @@ header {
     background-size: cover;
     background-position: center;
     height: 300px;
+    position: relative;
+
 
 }
 
@@ -44,6 +47,37 @@ header {
 
 .tabdesk-options {
     display: none;
+}
+
+#ham {
+    cursor: pointer;
+}
+
+#mini-option-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 1em;
+    width: 85%;
+    align-self: center;
+    margin: 0 auto;
+    justify-content: space-evenly;
+
+}
+
+#mini-option-menu a {
+
+    text-decoration: none;
+    color: #000000;
+    border-bottom: 1px solid #979797;
+    padding: 1.5em 1.5em;
+    font-weight: bold;
+
+
+}
+
+#mini-option-menu :last-child {
+    border-bottom: none;
 }
 
 
@@ -82,6 +116,11 @@ header {
         max-width: 1160px;
         padding-top: 3em;
         margin: 0 auto;
+    }
+
+    #mini-option-menu {
+        display: none !important;
+
     }
 
 }
