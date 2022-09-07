@@ -6,6 +6,7 @@
 body {
     font-family: 'Commissioner', sans-serif;
 
+
 }
 
 header {
@@ -15,6 +16,9 @@ header {
     background-position: center;
     height: 300px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 
 }
@@ -62,6 +66,8 @@ header {
     align-self: center;
     margin: 0 auto;
     justify-content: space-evenly;
+    position: absolute;
+    top: 4.5em;
 
 }
 
@@ -69,8 +75,8 @@ header {
 
     text-decoration: none;
     color: #000000;
-    border-bottom: 1px solid #979797;
-    padding: 1.5em 1.5em;
+    border-bottom: 1px solid #97979781;
+    padding: 2em 1.5em;
     font-weight: bold;
 
 
