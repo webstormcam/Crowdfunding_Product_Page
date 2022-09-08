@@ -5,6 +5,8 @@
 
 body {
     font-family: 'Commissioner', sans-serif;
+    position: relative;
+
 
 
 }
@@ -23,11 +25,21 @@ header {
 
 }
 
+.shade {
+    background-color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+
+
 #header-gradient {
     width: 100%;
     background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.0001) 100%);
     mix-blend-mode: normal;
     padding-bottom: 4em;
+    position: absolute;
+    z-index: 1;
 
 
 }
@@ -68,6 +80,7 @@ header {
     justify-content: space-evenly;
     position: absolute;
     top: 4.5em;
+    z-index: 2;
 
 }
 
@@ -84,6 +97,76 @@ header {
 
 #mini-option-menu :last-child {
     border-bottom: none;
+}
+
+main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    font-weight: 700;
+    margin-bottom: 1em;
+    padding: 0em 2em;
+}
+
+.intro-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 327px;
+    border-radius: 1em;
+    position: relative;
+    top: -4em;
+    background-color: #fff;
+    max-width: 80%;
+
+}
+
+.inner-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #7A7A7A;
+}
+
+.innerbox-p {
+    padding: 0em 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mastercraft {
+    position: relative;
+    top: -1.5em;
+}
+
+#back {
+    font-size: 1em;
+}
+
+.buttons-green {
+    color: #fff;
+    background-color: #3CB3AB;
+    border-radius: 2em;
+    font-weight: 700;
+    padding: 1em 2em;
 }
 
 
