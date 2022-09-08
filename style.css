@@ -21,6 +21,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: 'Commissioner', sans-serif;
 
 
 }
@@ -104,6 +105,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 h1 {
@@ -113,6 +115,7 @@ h1 {
     font-weight: 700;
     margin-bottom: 1em;
     padding: 0em 2em;
+
 }
 
 .intro-block {
@@ -125,6 +128,7 @@ h1 {
     top: -4em;
     background-color: #fff;
     max-width: 80%;
+    border: 1px solid #80808029;
 
 }
 
@@ -150,6 +154,9 @@ p {
 .buttons {
     display: flex;
     justify-content: space-between;
+    padding: 0em 1.5em;
+    width: 100%;
+    margin-bottom: 2.5em;
 }
 
 .mastercraft {
@@ -159,6 +166,8 @@ p {
 
 #back {
     font-size: 1em;
+    width: 75%;
+
 }
 
 .buttons-green {
@@ -167,6 +176,11 @@ p {
     border-radius: 2em;
     font-weight: 700;
     padding: 1em 2em;
+    border: none;
+    font-family: 'Commissioner', sans-serif;
+    display: flex;
+    justify-content: center;
+
 }
 
 
