@@ -1,6 +1,6 @@
 const ham = document.getElementById('ham')
 const miniMenu = document.getElementById('mini-option-menu')
-const header = document.querySelector('header')
+const header = document.querySelector('.darken-layer')
 
 ham.addEventListener('click',function(){
 if(ham.getAttribute('src')==='imgs/icon-hamburger.svg'){

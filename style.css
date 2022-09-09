@@ -22,14 +22,14 @@ header {
     flex-direction: column;
     align-items: center;
     font-family: 'Commissioner', sans-serif;
+    z-index: -1;
 
 
 }
 
 .shade {
-    background-color: #000000;
+    background-color: hsla(279, 73%, 46%, 0.61);
     mix-blend-mode: normal;
-    opacity: 0.5;
 }
 
 
@@ -52,7 +52,7 @@ header {
     padding-top: 1.8em;
     padding-left: 1.5em;
     padding-right: 1.5em;
-    opacity: 1;
+
 
 
 
@@ -105,6 +105,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: -1;
 
 }
 
@@ -129,6 +130,7 @@ h1 {
     background-color: #fff;
     max-width: 80%;
     border: 1px solid #80808029;
+    z-index: 0;
 
 }
 
