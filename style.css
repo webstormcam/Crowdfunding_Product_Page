@@ -23,12 +23,19 @@ header {
     align-items: center;
     font-family: 'Commissioner', sans-serif;
     z-index: -1;
+    width: 100%;
 
 
 }
 
+.darken-layer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .shade {
-    background-color: hsla(279, 73%, 46%, 0.61);
+    background-color: hsl(279deg 8% 13% / 69%);
     mix-blend-mode: normal;
 }
 
@@ -187,6 +194,8 @@ p {
 
 
 
+
+
 @media screen and (min-width:768px) {
     header {
         background-image: url('imgs/image-hero-desktop.jpg');
@@ -226,6 +235,10 @@ p {
     #mini-option-menu {
         display: none !important;
 
+    }
+
+    .shade {
+        background-color: rgba(0, 0, 0, 0.0001);
     }
 
 }
