@@ -214,13 +214,43 @@ p {
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin-bottom: 2em;
+    border-bottom: 1px solid #7A7A7A;
+    padding-bottom: 1em;
 
 }
+
+
 
 .moneies {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    padding: 2em 0em;
+
+}
+
+.money:last-child {
+    border-bottom: none;
+}
+
+.data {
+    font-size: 2em;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 0.5em;
+
+}
+
+#myProgress {
+    width: 100%;
+    background-color: grey;
+}
+
+#myBar {
+    width: 1%;
+    height: 30px;
+    background-color: green;
 }
 
 
