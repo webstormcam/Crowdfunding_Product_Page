@@ -140,6 +140,7 @@ h1 {
     max-width: 80%;
     border: 1px solid #80808029;
     z-index: 0;
+    padding: 0em 1.5em;
 
 }
 
@@ -165,7 +166,6 @@ p {
 .buttons {
     display: flex;
     justify-content: space-between;
-    padding: 0em 1.5em;
     width: 100%;
     margin-bottom: 2.5em;
 }
@@ -206,6 +206,7 @@ p {
     z-index: 0;
     position: relative;
     top: -2.5em;
+    padding: 0em 1.5em;
 }
 
 
@@ -246,7 +247,7 @@ p {
 
 .bar-section {
     width: 100%;
-    padding: 0em 1.5em;
+
     padding-bottom: 2em;
 }
 
