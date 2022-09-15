@@ -305,8 +305,21 @@ h3 {
     margin-top: 1em;
 }
 
+.big-num {
+    font-size: 2em;
+    color: #000000;
+    font-weight: bold;
+    margin-right: 0.2em;
+}
+
 .card-stats {
     display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.left {
+    color: #7A7A7A;
 }
 
 
