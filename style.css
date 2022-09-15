@@ -275,13 +275,38 @@ p {
 
 }
 
-.about p {
+.about-p {
     margin: 2em 0em;
 }
 
 h2 {
     font-weight: bold;
     font-size: 1.2em;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #80808029;
+
+    padding: 1.5em 1.5em;
+}
+
+.pledge-desc {
+    margin: 0.5em 0em;
+    color: #3CB3AB;
+    font-weight: 500;
+}
+
+.stats-button-section {
+    margin-top: 1em;
+}
+
+.card-stats {
+    display: flex;
 }
 
 
