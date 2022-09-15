@@ -291,8 +291,9 @@ h3 {
 .card {
     background-color: #fff;
     border: 1px solid #80808029;
-
+    margin-bottom: 2em;
     padding: 1.5em 1.5em;
+    border-radius: 1em;
 }
 
 .pledge-desc {
@@ -315,7 +316,7 @@ h3 {
 .card-stats {
     display: flex;
     align-items: center;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
 }
 
 .left {
