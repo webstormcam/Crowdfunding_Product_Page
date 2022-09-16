@@ -32,11 +32,16 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+
 }
 
 .shade {
     background-color: hsl(279deg 8% 13% / 69%);
     mix-blend-mode: normal;
+    height: 100%;
+    overflow: hidden;
+
 }
 
 
@@ -190,6 +195,10 @@ p {
     display: flex;
     justify-content: center;
 
+}
+
+.buttons-green:hover {
+    background-color: red;
 }
 
 .money-block {
