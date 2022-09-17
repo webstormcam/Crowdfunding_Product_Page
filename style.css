@@ -334,51 +334,73 @@ h3 {
 
 
 
-
-
-@media screen and (min-width:768px) {
-    #top-background-image {
-        background-image: url('imgs/image-hero-desktop.jpg');
-
-
-        height: 400px;
-    }
-
-    #ham {
-        display: none;
-    }
-
-    .tabdesk-options {
-        display: flex;
-        width: 225px;
+@media screen and (min-width:635px) {
+    .moneies {
+        flex-direction: row;
         justify-content: space-between;
-
+        width: 100%;
     }
 
-    .tabdesk-options a {
-        display: inline-block;
-        text-decoration: none;
-        color: #fff;
+    .money {
+        border-bottom: none;
+        border-right: 1px solid red;
+        padding-bottom: 0em;
+        width: 30%;
+        text-align: left;
     }
 
-    .tabdesk-options a:hover {
-        text-decoration: underline;
-        cursor: pointer;
+    .money:last-child {
+        border-right: none;
     }
 
-    .top-header {
-        max-width: 1160px;
-        padding-top: 3em;
-        margin: 0 auto;
+
+
+
+    @media screen and (min-width:768px) {
+        #top-background-image {
+            background-image: url('imgs/image-hero-desktop.jpg');
+
+
+            height: 400px;
+        }
+
+        #ham {
+            display: none;
+        }
+
+        .tabdesk-options {
+            display: flex;
+            width: 225px;
+            justify-content: space-between;
+
+        }
+
+        .tabdesk-options a {
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .tabdesk-options a:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .top-header {
+            max-width: 1160px;
+            padding-top: 3em;
+            margin: 0 auto;
+        }
+
+        #mini-option-menu {
+            display: none !important;
+
+        }
+
+        .shade {
+            background-color: rgba(0, 0, 0, 0.0001);
+        }
+
+
+
     }
-
-    #mini-option-menu {
-        display: none !important;
-
-    }
-
-    .shade {
-        background-color: rgba(0, 0, 0, 0.0001);
-    }
-
-}
