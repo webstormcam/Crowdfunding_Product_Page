@@ -353,6 +353,23 @@ h3 {
         border-right: none;
     }
 
+    .card-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .stats-button-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .card-stats {
+        margin-bottom: 0em;
+    }
+
 
 
 
@@ -392,14 +409,36 @@ h3 {
             margin: 0 auto;
         }
 
+
+
         #mini-option-menu {
             display: none !important;
 
         }
 
+
+
         .shade {
             background-color: rgba(0, 0, 0, 0.0001);
         }
+
+        h1 {
+            font-size: 28px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        .inner-box {
+            width: 100%;
+        }
+
+        #back {
+            width: 204px;
+        }
+
+
 
 
 
