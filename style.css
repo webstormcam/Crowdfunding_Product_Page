@@ -343,14 +343,20 @@ h3 {
 
     .money {
         border-bottom: none;
-        border-right: 1px solid red;
+        border-right: 1px solid #80808062;
         padding-bottom: 0em;
         width: 30%;
         text-align: left;
+        position: relative;
+        left: 2em;
     }
 
     .money:last-child {
         border-right: none;
+    }
+
+    .money:first-child {
+        left: 0em;
     }
 
     .card-head {
@@ -369,6 +375,8 @@ h3 {
     .card-stats {
         margin-bottom: 0em;
     }
+
+
 
 
 
