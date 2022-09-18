@@ -1,6 +1,7 @@
 const ham = document.getElementById('ham')
 const miniMenu = document.getElementById('mini-option-menu')
 const header = document.querySelector('.darken-layer')
+const forceScrollMatch = window.matchMedia('(min-width: 768px)')
 
 ham.addEventListener('click',function(){
 if(ham.getAttribute('src')==='imgs/icon-hamburger.svg'){
@@ -15,6 +16,16 @@ if(ham.getAttribute('src')==='imgs/icon-hamburger.svg'){
     enableScroll()
 }
 });
+
+forceScrollMatch.addListener(turnItOn)
+turnItOn(forceScrollMatch)
+function turnItOn(forceScrollMatch){
+  if(forceScrollMatch.matches||ham.getAttribute('src')==='imgs/icon-hamburger.svg'){
+    enableScroll()
+  } else{
+    disableScroll()
+  }
+}
 
 
 
