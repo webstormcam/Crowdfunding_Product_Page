@@ -332,6 +332,10 @@ h3 {
     color: #7A7A7A;
 }
 
+.book-mark-word {
+    display: none;
+}
+
 
 
 @media screen and (min-width:635px) {
@@ -350,6 +354,8 @@ h3 {
         position: relative;
         left: 2em;
     }
+
+
 
     .money:last-child {
         border-right: none;
@@ -421,6 +427,31 @@ h3 {
 
         #mini-option-menu {
             display: none !important;
+
+        }
+
+        .buttons {
+            align-items: center;
+        }
+
+        .book-mark-part {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background-color: #7a7a7a3f;
+            border-radius: 2em;
+
+        }
+
+        .book-mark-icon {
+            margin-right: 1em;
+        }
+
+        .book-mark-word {
+            display: block;
+            font-weight: bold;
+            position: relative;
+            right: 0.5em;
 
         }
 
