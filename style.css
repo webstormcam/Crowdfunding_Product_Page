@@ -116,7 +116,7 @@ main {
     position: relative;
     display: flex;
     flex-direction: column;
-    z-index: -1;
+    z-index: 1;
     width: 87%;
     max-width: 730px;
 
@@ -194,6 +194,7 @@ p {
     font-family: 'Commissioner', sans-serif;
     display: flex;
     justify-content: center;
+    cursor: pointer;
 
 }
 
