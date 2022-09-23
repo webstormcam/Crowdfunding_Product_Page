@@ -5,6 +5,7 @@ const forceScrollMatch = window.matchMedia('(min-width: 768px)')
 const main = document.querySelector('main')
 const bookMark = document.getElementById('book-mark-part')
 const bookMark_icon = document.querySelector('.book-mark-icon')
+const bookMark_word = document.querySelector('.book-mark-word')
 
 
 ham.addEventListener('click',function(){
@@ -36,13 +37,21 @@ function turnItOn(forceScrollMatch){
   }
 }
 
-function makeGreen(){
-  // bookMark.style.backgroundColor='green'
-  bookMark.style.backgroundColor='red'
-  bookMark_icon.style.filter = 'invert(53%) sepia(96%) saturate(3217%) hue-rotate(161deg) brightness(94%) contrast(104%'
-  alert("The ontoggle event occured");
-  console.log('switch!!!')
-}
+
+
+bookMark.addEventListener('click',function(){
+  // bookMark.style.backgroundColor='red'
+  // bookMark_icon.style.filter = 'invert(53%) sepia(96%) saturate(3217%) hue-rotate(161deg) brightness(94%) contrast(104%'
+  if(bookMark_word.style.color==='rgb(20, 122, 115)'){
+    bookMark_word.style.color='#7A7A7A'
+    bookMark_icon.style.filter=''
+  } else{
+    bookMark_word.style.color='rgb(20, 122, 115)'
+    bookMark_icon.style.filter='invert(53%) sepia(96%) saturate(3217%) hue-rotate(161deg) brightness(94%) contrast(104%'
+  }
+
+})
+
 
 
 
