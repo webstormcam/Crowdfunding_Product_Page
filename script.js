@@ -3,6 +3,7 @@ const miniMenu = document.getElementById('mini-option-menu')
 const header = document.querySelector('.darken-layer')
 const forceScrollMatch = window.matchMedia('(min-width: 768px)')
 const main = document.querySelector('main')
+const bookMark = document.querySelector('#book-mark-part')
 
 ham.addEventListener('click',function(){
 if(ham.getAttribute('src')==='imgs/icon-hamburger.svg'){
@@ -15,7 +16,7 @@ if(ham.getAttribute('src')==='imgs/icon-hamburger.svg'){
     ham.src='imgs/icon-hamburger.svg'
     miniMenu.style.display='none'
     header.classList.remove('shade')
-    
+    main.style.zIndex='1'
     enableScroll()
 }
 });
