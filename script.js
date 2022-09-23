@@ -3,7 +3,9 @@ const miniMenu = document.getElementById('mini-option-menu')
 const header = document.querySelector('.darken-layer')
 const forceScrollMatch = window.matchMedia('(min-width: 768px)')
 const main = document.querySelector('main')
-const bookMark = document.querySelector('#book-mark-part')
+const bookMark = document.getElementById('book-mark-part')
+const bookMark_icon = document.querySelector('.book-mark-icon')
+
 
 ham.addEventListener('click',function(){
 if(ham.getAttribute('src')==='imgs/icon-hamburger.svg'){
@@ -33,6 +35,18 @@ function turnItOn(forceScrollMatch){
     
   }
 }
+
+function makeGreen(){
+  // bookMark.style.backgroundColor='green'
+  bookMark.style.backgroundColor='red'
+  bookMark_icon.style.filter = 'invert(53%) sepia(96%) saturate(3217%) hue-rotate(161deg) brightness(94%) contrast(104%'
+  alert("The ontoggle event occured");
+  console.log('switch!!!')
+}
+
+
+
+
 
 
 
