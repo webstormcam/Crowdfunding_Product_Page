@@ -6,6 +6,8 @@ const main = document.querySelector('main')
 const bookMark = document.getElementById('book-mark-part')
 const bookMark_icon = document.querySelector('.book-mark-icon')
 const bookMark_word = document.querySelector('.book-mark-word')
+const circle = document.querySelector('circle')
+const path = document.querySelector('path')
 
 
 ham.addEventListener('click',function(){
@@ -44,10 +46,14 @@ bookMark.addEventListener('click',function(){
   // bookMark_icon.style.filter = 'invert(53%) sepia(96%) saturate(3217%) hue-rotate(161deg) brightness(94%) contrast(104%'
   if(bookMark_word.style.color==='rgb(20, 122, 115)'){
     bookMark_word.style.color='#7A7A7A'
-    bookMark_icon.style.filter=''
+    circle.style.filter=''
+    path.style.fill=''
+  
   } else{
     bookMark_word.style.color='rgb(20, 122, 115)'
-    bookMark_icon.style.filter='invert(53%) sepia(96%) saturate(3217%) hue-rotate(161deg) brightness(94%) contrast(104%'
+    circle.style.filter='invert(30%) sepia(40%) saturate(3086%) hue-rotate(152deg) brightness(88%) contrast(84%)';
+    path.style.fill='#FFFFFF'
+  
   }
 
 })
