@@ -8,6 +8,10 @@ const bookMark_icon = document.querySelector('.book-mark-icon')
 const bookMark_word = document.querySelector('.book-mark-word')
 const circle = document.querySelector('circle')
 const path = document.querySelector('path')
+const green_buttons = document.querySelector('#back')
+
+
+// 
 
 
 ham.addEventListener('click',function(){
