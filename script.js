@@ -1,6 +1,7 @@
 const ham = document.getElementById('ham')
 const miniMenu = document.getElementById('mini-option-menu')
 const header = document.querySelector('.darken-layer')
+const realHeader = document.querySelector('header')
 const forceScrollMatch = window.matchMedia('(min-width: 768px)')
 const main = document.querySelector('main')
 const bookMark = document.getElementById('book-mark-part')
@@ -8,10 +9,19 @@ const bookMark_icon = document.querySelector('.book-mark-icon')
 const bookMark_word = document.querySelector('.book-mark-word')
 const circle = document.querySelector('circle')
 const path = document.querySelector('path')
-const green_buttons = document.querySelector('#back')
+const green_button1 = document.querySelector('#back')
+const top_background_image = document.querySelector('#top-background-image');
 
 
-// 
+
+green_button1.addEventListener('click',function(){
+  console.log('clicked')
+  header.classList.add('shade2')
+  main.style.zIndex='-1'
+  realHeader.style.zIndex='-2'
+  top_background_image.style.zIndex='-3'
+})
+
 
 
 ham.addEventListener('click',function(){
@@ -33,10 +43,14 @@ if(ham.getAttribute('src')==='imgs/icon-hamburger.svg'){
 forceScrollMatch.addListener(turnItOn)
 turnItOn(forceScrollMatch)
 function turnItOn(forceScrollMatch){
-  if(forceScrollMatch.matches||ham.getAttribute('src')==='imgs/icon-hamburger.svg'){
+  if(header.classList.contains('shade2')){
+    main.style.zIndex='-1'
+    enableScroll()
+  } else if(forceScrollMatch.matches||ham.getAttribute('src')==='imgs/icon-hamburger.svg'){
     main.style.zIndex='1'
     enableScroll()
-  } else{
+  }
+  else{
     main.style.zIndex='-1'
     disableScroll()
     

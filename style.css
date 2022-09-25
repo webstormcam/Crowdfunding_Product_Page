@@ -44,6 +44,13 @@ body {
 
 }
 
+.shade2 {
+    background-color: hsl(279deg 8% 13% / 69%);
+    mix-blend-mode: normal;
+    height: 100%;
+    overflow: hidden;
+}
+
 
 
 header {
