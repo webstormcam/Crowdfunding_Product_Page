@@ -11,6 +11,7 @@ const circle = document.querySelector('circle')
 const path = document.querySelector('path')
 const green_button1 = document.querySelector('#back')
 const top_background_image = document.querySelector('#top-background-image');
+const backed_project = document.querySelector('#back_this_project')
 
 
 
@@ -20,6 +21,8 @@ green_button1.addEventListener('click',function(){
   main.style.zIndex='-1'
   realHeader.style.zIndex='-2'
   top_background_image.style.zIndex='-3'
+  backed_project.style.display='flex'
+
 })
 
 

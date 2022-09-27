@@ -349,6 +349,13 @@ h3 {
     cursor: pointer;
 }
 
+#back_this_project {
+    display: none;
+    background-color: #ffffff;
+    position: absolute;
+    top: 2em;
+}
+
 
 
 @media screen and (min-width:635px) {
